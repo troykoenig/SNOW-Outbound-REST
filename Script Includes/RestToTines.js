@@ -4,16 +4,13 @@ RestToTines.prototype = {
     },
 
     generateRest: function(httpVerb, data) {
-        var AccessKey = gs.getProperty('TinesApiKey');
-        // Set looper
-        var looper = 0;
-
         //Create Variables for RESTMessageV2
         var requestBody;
         var responseBody;
         var status;
         var sm;
         var restHttpVerb = httpVerb.toLowerCase();
+        var AccessKey = gs.getProperty('TinesApiKey');
 
         //Send Rest Message
         try{
