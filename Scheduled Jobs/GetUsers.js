@@ -12,6 +12,9 @@ while(next()) {
     users.push(user);
 }
 
+var payload = {
+    "results": users
+}
 
-var resp = restToTines("POST", )
+var resp = restToTines("POST", payload)
 

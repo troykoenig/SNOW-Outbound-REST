@@ -3,7 +3,7 @@ RestToTines.prototype = {
     initialize: function() {
     },
 
-    generateRest: function(httpVerb, resourcePath, data) {
+    generateRest: function(httpVerb, data) {
         var AccessKey = gs.getProperty('TinesApiKey');
         // Set looper
         var looper = 0;
